@@ -25,110 +25,92 @@
       .oregano {
         font-family: "Oregano", cursive;
       }
-      .skill-box {
-        /*w-80 h-20 text-center bg-white text-black m-5 rounded-xl shadow-lg flex items-center justify-center text-xl font-semibold*/
-        width: 340px;
-        height: 80px;
-        background-color: white;
-        margin: 10px 14px;
-        border-radius: 12px;
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.085);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 20px;
-        font-weight: 600;
-      }
     </style>
   </head>
 
   <body class="overflow-x-hidden relative font-poppins">
-    <nav class="h-20 w-screen flex">
-      <div
-        class="h-full w-1/3 text-xl font-bold pl-36 flex items-center text-[#232323]"
-      >
-        <img src="assets/logo.png" alt="" class="h-6 mt-1 mr-2" />
+    <nav class="h-20 w-screen lg:flex lg:flex-row flex-col bg-white sticky top-0 mt-10 lg:mt-0 z-50">
+      <div class="h-10 lg:h-full lg:w-1/3 w-full text-xl font-bold lg:pl-36 flex justify-center lg:justify-normal items-center text-[#232323]">
+        <img src="assets/logo.png" alt="" class="lg:h-6 h-6 mt-1 mr-2" />
         Ganesh Govala
       </div>
-      <div
-        class="h-full w-2/3 pr-36 text-lg font-medium flex items-center justify-end"
-      >
-        <ul class="float-end flex space-x-8 text-[#232323]">
-          <a href=""><li class="hover:underline">Home</li></a>
-          <a href=""><li class="hover:underline">About</li></a>
-          <a href=""><li class="hover:underline">Skills</li></a>
-          <a href=""><li class="hover:underline">Projects</li></a>
-          <a href=""><li class="hover:underline">Contact</li></a>
+      <div class="lg:h-full h-10 lg:w-2/3 w-screen lg:pr-36 lg:text-lg text-sm font-medium flex items-center lg:justify-end justify-center">
+        <ul class="lg:float-end flex justify-center lg:justify-normal space-x-4 lg:space-x-8 text-[#232323]">
+          <a href="#home"><li class="hover:underline">Home</li></a>
+          <a href="#about"><li class="hover:underline">About</li></a>
+          <a href="#skills"><li class="hover:underline">Skills</li></a>
+          <a href="#projects"><li class="hover:underline">Projects</li></a>
+          <a href="#contact"><li class="hover:underline">Contact</li></a>
         </ul>
       </div>
     </nav>
     <!--<Main-->
-    <div class="h-[90vh] w-screen pb-16 px-36">
+    <div id="home" class="lg:h-[700px] h-[650px] w-screen pb-16 lg:px-36 px-10">
       <div class="h-full w-full flex items-top justify-center relative">
         <div class="h-max w-[800px] mt-40 relative">
-          <p class="oregano text-8xl text-center text-[#232323]">
+          <p class="oregano lg:text-8xl text-5xl text-center text-[#232323]">
             Crafting Code & Designing Dreams
           </p>
           <img
-            class="h-6 absolute left-20 bottom-[70px]"
+            class="lg:h-6 h-3 absolute lg:left-20 -left-2 lg:bottom-[70px] bottom-[25px]"
             src="assets/3lines.png"
             alt=""
           />
           <img
-            class="h-20 absolute left-16 bottom-3 -z-10"
+            class="lg:h-20 h-6 absolute lg:left-16 -left-1 bottom-4 -z-10"
             src="assets/green-shape.png"
             alt=""
           />
           <img
-            class="h-20 absolute right-[80px] top-0 -z-10"
+            class="lg:h-20 h-10 absolute lg:right-[80px] -right-[5px] top-0 -z-10"
             src="assets/red-shape.png"
             alt=""
           />
           <img
-            class="h-6 absolute top-0 left-24 animate-bounce"
+            class="lg:h-6 h-3 absolute lg:top-0 top-1 lg:left-24 left-1 animate-bounce"
             src="assets/new.png"
             alt=""
           />
           <img
-            class="h-5 absolute right-20 bottom-20 animate-pulse"
+            class="lg:h-5 h-2 absolute lg:right-20 right-0 lg:bottom-20 bottom-7 animate-pulse"
             src="assets/star.png"
             alt=""
           />
           <img
-            class="h-10 absolute top-0 right-[75px]"
+            class="lg:h-10 h-6 absolute top-0 lg:right-[75px] -right-3"
             src="assets/wrinkle-2.png"
             alt=""
           />
-          <img class="h-5 absolute right-36" src="assets/wrinkle.png" alt="" />
+          <img class="lg:h-5 h-2 absolute lg:right-36 right-7" src="assets/wrinkle.png" alt="" />
         </div>
         <div
-          class="w-[300px] font-poppins absolute bottom-0 left-0 font-semibold text-[#232323]"
+          class="w-[300px] font-poppins text-sm lg:text-lg text-center lg:text-left absolute lg:bottom-0 bottom-36 lg:left-0 font-semibold text-[#232323]"
         >
           Scroll through to see how creativity and code come together. Your next
           big idea might just start here!
         </div>
         <img
           src="assets/scroll-ellipse.png"
-          class="h-20 absolute right-0 bottom-0"
+          class="h-20 absolute lg:right-0 lg:bottom-0 mx-auto lg:mx-0 bottom-10"
           alt=""
         />
-        <p class="absolute bottom-10 right-7 text-xs">Explore</p>
+        <p class="absolute lg:bottom-10 lg:right-7 bottom-20 mx-auto lg:mx-0 text-xs">Explore</p>
         <img
-          class="absolute bottom-5 right-10 animate-bounce h-3"
+          class="absolute lg:bottom-5 bottom-16 lg:right-10 mx-auto lg:mx-0 animate-bounce h-3"
           src="assets/arrow.png"
         />
       </div>
     </div>
     <!--About-->
-    <div class="h-max py-10 mb-16 px-36 relative">
+    <div id="about" class="h-max py-10 mb-16 lg:px-36 px-4 relative">
       <img
         src="assets/aboutH-1.png"
-        class="h-10 absolute right-72 top-40"
+        class="h-5 lg:h-10 absolute lg:right-72 right-7 lg:top-40 top-44"
         alt=""
       />
       <img
         src="assets/aboutH-2.png"
-        class="h-20 absolute left-64 top-52"
+        class="lg:h-20 h-10 absolute lg:left-64 left-5 lg:top-52 top-72"
         alt=""
       />
       <div class="w-min h-min mx-auto relative">
@@ -144,9 +126,7 @@
           alt=""
         />
       </div>
-      <div
-        class="mx-44 text-center font-poppins mt-20 text-xl font-semibold text-[#232323]"
-      >
+      <div class="lg:mx-44 mx-5 text-center font-poppins mt-20 lg:text-xl text-lg font-semibold text-[#232323]">
         Hi, I’m Govala Sri Ram Ganesh – a
         <span class="font-bold text-black">Flutter developer, web designer</span
         >, and tech enthusiast passionate about creating innovative and
@@ -157,10 +137,10 @@
       </div>
     </div>
     <!--Skills-->
-    <div class="w-screen bg-yellow-300 relative h-max py-10 mb-16 px-36 -z-10">
+    <div id="skills" class="w-screen bg-yellow-300 relative h-max py-10 mb-16 lg:px-36 px-5 -z-10">
       <img
         src="assets/pencil.png"
-        class="h-20 -right-8 top-10 absolute"
+        class="lg:h-20 h-10 lg:-right-8 -right-5 top-10 absolute"
         alt=""
       />
       <div class="w-min h-min mx-auto relative">
@@ -172,20 +152,20 @@
         />
       </div>
       <div class="flex flex-wrap justify-evenly items-center mt-16 mb-6">
-        <div class="skill-box">C</div>
-        <div class="skill-box">Python</div>
-        <div class="skill-box">Java</div>
-        <div class="skill-box">Flutter</div>
-        <div class="skill-box">Dart</div>
-        <div class="skill-box">Firebase</div>
-        <div class="skill-box">Sql</div>
-        <div class="skill-box">Javascript</div>
-        <div class="skill-box">Figma</div>
+        <div class="lg:w-80 w-40 lg:h-20 h-14 text-center bg-white text-black lg:m-5 m-1 rounded-xl shadow-lg flex items-center justify-center lg:text-xl text-lg font-semibold">C</div>
+        <div class="lg:w-80 w-40 lg:h-20 h-14 text-center bg-white text-black lg:m-5 m-1 rounded-xl shadow-lg flex items-center justify-center lg:text-xl text-lg font-semibold">Python</div>
+        <div class="lg:w-80 w-40 lg:h-20 h-14 text-center bg-white text-black lg:m-5 m-1 rounded-xl shadow-lg flex items-center justify-center lg:text-xl text-lg font-semibold">Java</div>
+        <div class="lg:w-80 w-40 lg:h-20 h-14 text-center bg-white text-black lg:m-5 m-1 rounded-xl shadow-lg flex items-center justify-center lg:text-xl text-lg font-semibold">Flutter</div>
+        <div class="lg:w-80 w-40 lg:h-20 h-14 text-center bg-white text-black lg:m-5 m-1 rounded-xl shadow-lg flex items-center justify-center lg:text-xl text-lg font-semibold">Dart</div>
+        <div class="lg:w-80 w-40 lg:h-20 h-14 text-center bg-white text-black lg:m-5 m-1 rounded-xl shadow-lg flex items-center justify-center lg:text-xl text-lg font-semibold">Firebase</div>
+        <div class="lg:w-80 w-40 lg:h-20 h-14 text-center bg-white text-black lg:m-5 m-1 rounded-xl shadow-lg flex items-center justify-center lg:text-xl text-lg font-semibold">Sql</div>
+        <div class="lg:w-80 w-40 lg:h-20 h-14 text-center bg-white text-black lg:m-5 m-1 rounded-xl shadow-lg flex items-center justify-center lg:text-xl text-lg font-semibold">Javascript</div>
+        <div class="lg:w-80 w-40 lg:h-20 h-14 text-center bg-white text-black lg:m-5 m-1 rounded-xl shadow-lg flex items-center justify-center lg:text-xl text-lg font-semibold">Figma</div>
       </div>
     </div>
     <!--Projects-->
-    <section class="h-max my-20">
-      <div class="w-min h-min mx-auto relative sticky top-10">
+    <section id="projects" class="h-max my-20">
+      <div class="w-min h-min mx-auto relative sticky lg:top-10 top-32">
         <h1 class="oregano text-6xl text-[#232323]">Projects</h1>
         <img
           src="assets/projectsUnderline.png"
@@ -199,94 +179,93 @@
         />
       </div>
       <a href="https://my-starbucks-website.glitch.me/" target="_blank">
-        <div class="h-[600px] w-2/3 shadow-2xl mx-auto border-2 border-gray-600 rounded-3xl sticky top-[130px] my-10">
-          <h1 class="text-5xl py-10 text-center font-bold poppins text-[#232323] h-28">StarBucks Clone</h1>
-          <div class="w-full flex items-center justify-center space-x-4 h-max">
-            <div class="py-1 px-5 inline-block rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">HTML</div>
-            <div class="py-1 px-5 inline-block rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">Tailwind CSS</div>
+        <div class="lg:h-[600px] h-[300px] lg:w-2/3 w-[96%] shadow-2xl mx-auto border-2 border-gray-600 rounded-3xl sticky lg:top-[130px] top-[210px] my-10">
+          <h1 class="lg:text-5xl text-3xl lg:py-10 py-5 text-center font-bold poppins text-[#232323] lg:h-28 h-10 mb-6 lg:mb-0">StarBucks Clone</h1>
+          <div class="w-full flex items-center justify-center lg:space-x-4 space-x-2 h-max">
+            <div class="py-1 lg:px-5 px-3 inline-block rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">HTML</div>
+            <div class="py-1 lg:px-5 px-3 inline-block rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">Tailwind CSS</div>
           </div>
-          <div class="mt-10 bg-red-400 w-[75%] h-[417px] rounded-t-3xl mx-auto">
+          <div class="lg:mt-10 mt-6 bg-red-400 lg:w-[75%] w-[85%] lg:h-[417px] h-[182px] rounded-t-3xl mx-auto">
             <img src="assets/starbucks.png" class="h-full w-full border-t-2 border-l-2 border-r-2 rounded-t-3xl border-gray-500" alt="">
           </div>
         </div>
       </a>
       <a href="https://my-netflix-clone.glitch.me/" target="_blank">
-        <div class="h-[600px] w-2/3 shadow-2xl mx-auto border-2 bg-[#fff] border-gray-600 rounded-3xl sticky top-[140px] my-10">
-          <h1 class="text-5xl py-10 text-center font-bold poppins text-[#232323] h-28">Netflix Clone</h1>
-          <div class="w-full flex items-center justify-center space-x-4 h-max">
-            <div class="py-1 px-5 inline-block rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">HTML</div>
-            <div class="py-1 px-5 inline-block rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">Tailwind CSS</div>
+        <div class="lg:h-[600px] h-[300px] lg:w-2/3 w-[96%] shadow-2xl bg-white mx-auto border-2 border-gray-600 rounded-3xl sticky lg:top-[130px] top-[220px] my-10">
+          <h1 class="lg:text-5xl text-3xl lg:py-10 py-5 text-center font-bold poppins text-[#232323] lg:h-28 h-10 mb-6 lg:mb-0">Netflix Clone</h1>
+          <div class="w-full flex items-center justify-center lg:space-x-4 space-x-2 h-max">
+            <div class="py-1 lg:px-5 px-3 inline-block rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">HTML</div>
+            <div class="py-1 lg:px-5 px-3 inline-block rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">Tailwind CSS</div>
           </div>
-          <div class="mt-10 bg-red-400 w-[75%] h-[417px] rounded-t-3xl mx-auto">
+          <div class="lg:mt-10 mt-6 bg-red-400 lg:w-[75%] w-[85%] lg:h-[417px] h-[182px] rounded-t-3xl mx-auto">
             <img src="assets/netflix.png" class="h-full w-full border-t-2 border-l-2 border-r-2 rounded-t-3xl border-gray-500" alt="">
           </div>
         </div>
       </a>
       <a href="https://brawny-opaque-dawn.glitch.me/" target="_blank">
-        <div class="h-[600px] w-2/3 shadow-2xl mx-auto border-2 bg-white border-gray-600 rounded-3xl sticky top-[150px] my-10">
-          <h1 class="text-5xl py-10 text-center font-bold poppins text-[#232323] h-28">Fastrack Clone</h1>
-          <div class="w-full flex items-center justify-center space-x-4 h-max">
-            <div class="py-1 px-5 inline-block rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">HTML</div>
-            <div class="py-1 px-5 inline-block rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">Tailwind CSS</div>
+        <div class="lg:h-[600px] h-[300px] lg:w-2/3 w-[96%] shadow-2xl bg-white mx-auto border-2 border-gray-600 rounded-3xl sticky lg:top-[130px] top-[230px] my-10">
+          <h1 class="lg:text-5xl text-3xl lg:py-10 py-5 text-center font-bold poppins text-[#232323] lg:h-28 h-10 mb-6 lg:mb-0">Fastrack Clone</h1>
+          <div class="w-full flex items-center justify-center lg:space-x-4 space-x-2 h-max">
+            <div class="py-1 lg:px-5 px-3 inline-block rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">HTML</div>
+            <div class="py-1 lg:px-5 px-3 inline-block rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">Tailwind CSS</div>
           </div>
-          <div class="mt-10 bg-red-400 w-[80%] h-[417px] rounded-t-3xl mx-auto">
+          <div class="lg:mt-10 mt-6 bg-red-400 lg:w-[75%] w-[85%] lg:h-[417px] h-[182px] rounded-t-3xl mx-auto">
             <img src="assets/fastrack.png" class="h-full w-full border-t-2 border-l-2 border-r-2 rounded-t-3xl border-gray-500" alt="">
           </div>
         </div>
       </a>
       <a href="https://www.linkedin.com/posts/sri-ram-ganesh-govala-1b95a32a0_flutter-frontenddevelopment-uidesign-activity-7230203731546357762-wpOI?utm_source=share&utm_medium=member_desktop" target="_blank">
-        <div class="h-[600px] w-2/3 shadow-2xl mx-auto bg-white border-2 border-gray-600 rounded-3xl sticky top-[160px] my-10">
-            <h1 class="text-5xl py-10 text-center font-bold poppins text-[#232323] h-28">Chat App</h1>
-            <div class="w-full flex items-center justify-center space-x-4 h-max">
-              <div class="py-1 px-5 inline-block rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">Dart</div>
-              <div class="py-1 px-5 inline-block rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">Flutter</div>
-              <div class="py-1 px-5 inline-block rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">Firebase</div>
-            </div>
-            <div class="mt-10 bg-red-400 w-[65%] h-[417px] rounded-t-3xl mx-auto">
-              <img src="assets/chatapp.png" class="h-full w-full border-t-2 border-l-2 border-r-2 rounded-t-3xl border-gray-500" alt="">
-            </div>
+        <div class="lg:h-[600px] h-[300px] lg:w-2/3 w-[96%] shadow-2xl bg-white mx-auto border-2 border-gray-600 rounded-3xl sticky lg:top-[130px] top-[240px] my-10">
+          <h1 class="lg:text-5xl text-3xl lg:py-10 py-5 text-center font-bold poppins text-[#232323] lg:h-28 h-10 mb-6 lg:mb-0">Chat App</h1>
+          <div class="w-full flex items-center justify-center lg:space-x-4 space-x-2 h-max">
+            <div class="py-1 lg:px-5 px-3 inline-block rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">Dart</div>
+            <div class="py-1 lg:px-5 px-3 inline-block rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">Flutter</div>
+            <div class="py-1 lg:px-5 px-3 inline-block rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">Firebase</div>
+          </div>
+          <div class="lg:mt-10 mt-6 bg-red-400 lg:w-[75%] w-[85%] lg:h-[417px] h-[182px] rounded-t-3xl mx-auto">
+            <img src="assets/chatapp.png" class="h-full w-full border-t-2 border-l-2 border-r-2 rounded-t-3xl border-gray-500" alt="">
+          </div>
         </div>
       </a>
-        <div class="h-[600px] w-2/3 shadow-2xl mx-auto bg-white border-2 border-gray-600 rounded-3xl sticky top-[170px] my-10">
-          <h1 class="text-5xl py-10 text-center font-bold poppins text-[#232323] h-28">Bunkit</h1>
-          <div class="w-full flex items-center justify-center space-x-4 h-max">
-            <div class="py-1 px-5 inline-block rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">Dart</div>
-            <div class="py-1 px-5 inline-block rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">Flutter</div>
-            <div class="py-1 px-5 inline-block rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">Firebase</div>
-            <div class="py-1 px-5 inline-block rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">In-progress</div>
-          </div>
-          <div class="mt-10 w-[65%] h-[417px] rounded-t-3xl mx-auto">
-            <img src="assets/bunkit.png" class="h-full w-full border-t-2 border-l-2 border-r-2 rounded-t-3xl border-gray-500" alt="">
-          </div>
+      <div class="lg:h-[600px] h-[300px] lg:w-2/3 w-[96%] shadow-2xl bg-white mx-auto border-2 border-gray-600 rounded-3xl sticky lg:top-[130px] top-[250px] my-10">
+        <h1 class="lg:text-5xl text-3xl lg:py-10 py-5 text-center font-bold poppins text-[#232323] lg:h-28 h-10 mb-6 lg:mb-0">Chat App</h1>
+        <div class="w-full flex items-center justify-center lg:space-x-4 space-x-2 h-max">
+          <div class="py-1 lg:px-5 px-3 inline-block rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">Dart</div>
+          <div class="py-1 lg:px-5 px-3 inline-block rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">Flutter</div>
+          <div class="py-1 lg:px-5 px-3 inline-block rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">Firebase</div>
         </div>
+        <div class="lg:mt-10 mt-6 bg-red-400 lg:w-[75%] w-[85%] lg:h-[417px] h-[182px] rounded-t-3xl mx-auto">
+          <img src="assets/bunkit.png" class="h-full w-full border-t-2 border-l-2 border-r-2 rounded-t-3xl border-gray-500" alt="">
+        </div>
+      </div>
     </section>
     <!--Design Gallery-->
-    <div class="h-[600px] w-screen bg-white mt-32 -z-20">
+    <div class="lg:h-[600px] h-[350px] w-screen bg-white mt-32 -z-20">
       <div class="w-max h-min mx-auto relative z-10">
-        <h1 class="oregano text-6xl text-[#232323] z-10">Deisgn Gallery</h1>
+        <h1 class="oregano lg:text-6xl text-4xl text-[#232323] z-10">Deisgn Gallery</h1>
         <img
           src="assets/aboutUnderline.png"
-          class="absolute -bottom-10 opacity-90"
+          class="absolute lg:-bottom-10 -bottom-2 h-3 lg:h-10 opacity-90"
           alt=""
         />
         <img
           src="assets/green-shape.png"
-          class="h-20 absolute -top-2 -left-12 -z-10"
+          class="lg:h-20 h-10 absolute -top-2 lg:-left-12 -left-4 -z-10"
           alt=""
         />
       </div>
-      <div class="w-screen h-80 mt-24 flex items-center overflow-x-scroll no-scrollbar">
-        <div class="h-72 -mt-5 w-72 bg-gray-300 shadow-lg rounded-3xl mx-4 flex-shrink-0"><img src="assets/Burger-poster.png" class="h-fit w-fit rounded-3xl" alt=""></div>
-        <div class="h-72 -mb-5 w-72 bg-gray-300 shadow-lg rounded-3xl mx-4 flex-shrink-0 bg-[url('assets/nike-poster.jpg')] bg-cover bg-center"></div>
-        <div class="h-72 -mt-5 w-72 bg-gray-300 shadow-lg rounded-3xl mx-4 flex-shrink-0"><img src="assets/pizza poster.png" class="h-fit w-fit rounded-3xl" alt=""></div>
-        <div class="h-72 -mb-5 w-72 bg-gray-300 shadow-lg rounded-3xl mx-4 flex-shrink-0 bg-[url('assets/COCOCOLA.jpg')] bg-cover"></div>
-        <div class="h-72 -mt-5 w-72 bg-gray-300 shadow-lg rounded-3xl mx-4 flex-shrink-0"><img src="assets/COOKING (1).jpg" class="h-fit w-fit rounded-3xl" alt=""></div>
-        <div class="h-72 -mb-5 w-72 bg-gray-300 shadow-lg rounded-3xl mx-4 flex-shrink-0"><img src="assets/lin3.png" class="h-fit w-fit rounded-3xl" alt=""></div>
-        <div class="h-72 -mt-5 w-72 bg-gray-300 shadow-lg rounded-3xl mx-4 flex-shrink-0"><img src="assets/Re Designed Logo.jpg" class="h-fit w-fit rounded-3xl" alt=""></div>
+      <div class="w-screen lg:h-80 h-56 lg:mt-24 mt-10 flex items-center overflow-x-scroll no-scrollbar">
+        <div class="lg:h-72 h-48 lg:-mt-5 -mt-3 lg:w-72 w-48 bg-gray-300 shadow-lg lg:rounded-3xl rounded-xl lg:mx-4 mx-2 flex-shrink-0"><img src="assets/Burger-poster.png" class="h-fit w-fit lg:rounded-3xl rounded-xl" alt=""></div>
+        <div class="lg:h-72 h-48 lg:-mb-5 -mb-3 lg:w-72 w-48 bg-gray-300 shadow-lg lg:rounded-3xl rounded-xl lg:mx-4 mx-2 flex-shrink-0 bg-[url('assets/nike-poster.jpg')] bg-cover bg-center"></div>
+        <div class="lg:h-72 h-48 lg:-mt-5 -mt-3 lg:w-72 w-48 bg-gray-300 shadow-lg lg:rounded-3xl rounded-xl lg:mx-4 mx-2 flex-shrink-0"><img src="assets/pizza poster.png" class="h-fit w-fit lg:rounded-3xl rounded-xl" alt=""></div>
+        <div class="lg:h-72 h-48 lg:-mb-5 -mb-3 lg:w-72 w-48 bg-gray-300 shadow-lg lg:rounded-3xl rounded-xl lg:mx-4 mx-2 flex-shrink-0 bg-[url('assets/COCOCOLA.jpg')] bg-cover"></div>
+        <div class="lg:h-72 h-48 lg:-mt-5 -mt-3 lg:w-72 w-48 bg-gray-300 shadow-lg lg:rounded-3xl rounded-xl lg:mx-4 mx-2 flex-shrink-0"><img src="assets/COOKING (1).jpg" class="h-fit w-fit lg:rounded-3xl rounded-xl" alt=""></div>
+        <div class="lg:h-72 h-48 lg:-mb-5 -mb-3 lg:w-72 w-48 bg-gray-300 shadow-lg lg:rounded-3xl rounded-xl lg:mx-4 mx-2 flex-shrink-0"><img src="assets/lin3.png" class="h-fit w-fit lg:rounded-3xl rounded-xl" alt=""></div>
+        <div class="lg:h-72 h-48 lg:-mt-5 -mt-3 lg:w-72 w-48 bg-gray-300 shadow-lg lg:rounded-3xl rounded-xl lg:mx-4 mx-2 flex-shrink-0"><img src="assets/Re Designed Logo.jpg" class="h-fit w-fit lg:rounded-3xl rounded-xl" alt=""></div>
       </div>
     </div>
     <!--Contact-->
-    <div class="h-max w-screen">
+    <div id="contact" class="h-max w-screen">
       <div class="w-max h-min mx-auto relative">
         <img src="assets/star.png" class="absolute -right-6 top-0 h-5" alt="">
         <h1 class="oregano text-6xl text-[#232323]">Contact</h1>
@@ -302,21 +281,21 @@
         />
       </div>
       <p class="text-center text-sm text-black poppins mt-8">Get in touch</p>
-      <div class="h-96 mx-auto mt-10 w-2/5">
-        <h1 class="text-center text-xl font-semibold text-[#4f4f4f]">Linkedin</h1>
-        <a href="https://www.linkedin.com/in/sri-ram-ganesh-govala-1b95a32a0/" target="_blank"><p class="text-center text-3xl font-bold text-[#232323] hover:text-blue-700 cursor-pointer">Govala Sri Ram Ganesh</p></a>
-        <h1 class="text-center text-xl font-semibold text-[#4f4f4f] mt-5">Github</h1>
-        <a href="https://github.com/ganeshgovala" target="_blank"><p class="text-center text-3xl font-bold text-[#232323] hover:text-green-600 cursor-pointer">ganeshgovala</p></a>
-        <h1 class="text-center text-xl font-semibold text-[#4f4f4f] mt-5">Email</h1>
-        <a href="@email"><p class="text-center text-3xl font-bold text-[#232323] hover:text-red-500 cursor-pointer">sriramganeshgovala@gmail.com</p></a>
-        <h1 class="text-center text-xl font-semibold text-[#4f4f4f] mt-5">Mobile</h1>
-        <a><p class="text-center text-3xl font-bold text-[#232323] hover:text-yellow-500 cursor-pointer">+91 9603204860</p></a>
+      <div class="h-96 mx-auto mt-10 lg:w-2/5 w-[80%]">
+        <h1 class="text-center lg:text-xl text-lg font-semibold text-[#4f4f4f]">Linkedin</h1>
+        <a href="https://www.linkedin.com/in/sri-ram-ganesh-govala-1b95a32a0/" target="_blank"><p class="text-center lg:text-3xl text-xl font-bold text-[#232323] hover:text-blue-700 cursor-pointer">Govala Sri Ram Ganesh</p></a>
+        <h1 class="text-center lg:text-xl text-lg font-semibold text-[#4f4f4f] mt-5">Github</h1>
+        <a href="https://github.com/ganeshgovala" target="_blank"><p class="text-center lg:text-3xl text-xl font-bold text-[#232323] hover:text-green-600 cursor-pointer">ganeshgovala</p></a>
+        <h1 class="text-center lg:text-xl text-lg font-semibold text-[#4f4f4f] mt-5">Email</h1>
+        <a href="@email"><p class="text-center lg:text-3xl text-xl font-bold text-[#232323] hover:text-red-500 cursor-pointer">sriramganeshgovala@gmail.com</p></a>
+        <h1 class="text-center lg:text-xl text-lg font-semibold text-[#4f4f4f] mt-5">Mobile</h1>
+        <a><p class="text-center lg:text-3xl text-xl font-bold text-[#232323] hover:text-yellow-500 cursor-pointer">+91 9603204860</p></a>
       </div>
     </div>
-    <div class="bg-[#232323] h-[300px] p-10 flex justify-center items-center">
-      <h1 class="text-9xl font-bold poppins text-[#3f3f3f]">Let's Build Together!</h1>
+    <div class="bg-[#232323] lg:h-[300px] h-[100px] lg:p-10 p-3 flex justify-center items-center">
+      <h1 class="lg:text-9xl text-3xl font-bold poppins text-[#3f3f3f]">Let's Build Together!</h1>
     </div>
-    <div class="bg-black text-center p-2 w-screen">
+    <div class="bg-black text-center p-2 lg:py-0 py-4 w-screen">
       <p class="text-white text-xs">Made with ❤️</p>
     </div>
   </body>
